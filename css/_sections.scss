@@ -1,0 +1,96 @@
+#hero {
+	display: grid;
+	align-content: center;
+	max-width: none;
+	padding-right: 25vw;
+	background-color: $color-light-green;
+}
+
+#hero h1 {
+	max-width: 8ch;
+	margin-bottom: 1.5rem;
+	font-size: clamp(3.5rem, 10vw, 8rem);
+}
+
+#hero p {
+	max-width: 35rem;
+	font-size: 1.15rem;
+}
+
+#about,
+#contact {
+	display: grid;
+	grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.3fr);
+	gap: 2rem;
+	align-content: center;
+}
+
+#about h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+	margin-bottom: 0;
+	color: $color-green;
+	font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+#about p,
+#contact p {
+	max-width: 35rem;
+	margin-top: 0.75rem;
+	font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+#skills {
+	display: grid;
+	grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr);
+	gap: 2rem;
+	align-content: center;
+	background-color: $color-green;
+	color: $color-bg;
+}
+
+#skills h2 {
+	color: $color-bg;
+}
+
+#skills ul {
+	align-self: center;
+	margin: 0;
+	font-size: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+#projects {
+	background-color: $color-light-green;
+}
+
+#projects h2 {
+	margin-bottom: 4rem;
+}
+
+#project-overview,
+#project-details {
+	min-height: 2rem;
+}
+
+@media (max-width: 767px) {
+	nav {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 0.75rem 1rem;
+	}
+
+	#hero {
+		padding-right: 8vw;
+	}
+
+	#about,
+	#skills,
+	#contact {
+		grid-template-columns: 1fr;
+	}
+
+	#projects h2 {
+		margin-bottom: 2rem;
+	}
+}
