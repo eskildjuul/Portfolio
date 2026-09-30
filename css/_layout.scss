@@ -1,29 +1,17 @@
 header {
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	width: 100%;
-	padding: 1.5rem 5vw;
-}
-
-nav {
-	display: flex;
-	justify-content: flex-end;
-	gap: 1.5rem;
-	font-size: 0.9rem;
+	display: none;
 }
 
 main {
-	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 section {
-	min-height: 70vh;
-	padding: 7rem 8vw;
-}
-
-@media (min-width: 768px) {
-	section {
-		min-height: 100vh;
-	}
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 48px 64px 48px calc($section-bar-width + 40px);
+	background-color: $color-bg;
 }
