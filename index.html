@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Eskild Juul Christensen | Portefølje</title>
     <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="./js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,20 +12,22 @@
 
 </head>
 <body>
-    <header>
-        <nav aria-label="Hovednavigation">
-            <a href="#hero">Forside</a>
-            <a href="#about">Om mig</a>
-            <a href="#skills">Egenskaber</a>
-            <a href="#projects">Projekter</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-    </header>
-
     <main>
         <section id="hero">
             <div class="hero-meta">
-                <p>Contents</p>
+                <div class="contents-control">
+                    <button id="contents-toggle" type="button" aria-expanded="false" aria-controls="contents-menu">Contents</button>
+                    <nav id="contents-menu" class="contents-menu" aria-label="Indholdsfortegnelse">
+                        <a href="#about">Om mig</a>
+                        <a href="#skills">Egenskaber</a>
+                        <a href="#projects">Projekter</a>
+                        <a href="#ladybalance">LadyBalance</a>
+                        <a href="#gls-ai-playbook">GLS AI Playbook</a>
+                        <a href="#peak-digital">Peak Digital</a>
+                        <a href="#securitycheck">SecurityCheck</a>
+                        <a href="#contact">Kontakt mig</a>
+                    </nav>
+                </div>
                 <time datetime="2026-09">September 2026</time>
             </div>
             <div class="hero-title">
@@ -37,9 +39,8 @@
         <section id="about">
             <h2>Om mig</h2>
             <img class="about__image" src="./img/Eskild.png" alt="Portræt af Eskild Juul Christensen">
-            <p>Mit navn er Eskild, jeg er en nysgerrig og kreativ person, der godt kan lide at kaste mig ud i nye udfordringer. Jeg trives med at lære nyt, udvikle idéer og finde løsninger, når tingene ikke går helt som planlagt.
-                
-            Jeg er et social, åbent menneske og er vant til at samarbejde med forskellige mennesker. Samtidig er jeg målrettet og perfektionisktisk og jeg går op i at have mig selv med i det, jeg laver.</p>
+            <p class="about__intro">Mit navn er Eskild, jeg er en nysgerrig og kreativ person, der godt kan lide at kaste mig ud i nye udfordringer. Jeg trives med at lære nyt, udvikle idéer og finde løsninger, når tingene ikke går helt som planlagt.</p>
+            <p class="about__details">Jeg er et socialt, åbent menneske og er vant til at samarbejde med forskellige mennesker. Samtidig er jeg målrettet og perfektionistisk og jeg går op i at have mig selv med i det, jeg laver.</p>
         </section>
 
         <section id="skills">
@@ -66,10 +67,10 @@
         <section id="projects">
             <h2>Projekter</h2>
             <div id="project-overview">
-                <img class="project-img project-img--ladybalance" src="./img/Blomst.png" alt="LadyBalance Blomst">
-                <img class="project-img project-img--gls" src="./img/Finn2.png" alt="GLS Finn">
-                <img class="project-img project-img--peak" src="./img/Sofie.png" alt="Sofie fra Peak Digital">
-                <img class="project-img project-img--securitycheck" src="./img/SC.png" alt="Security Check Logo">
+                <img class="project-overview__image" src="./img/Blomst.png" alt="LadyBalance Blomst">
+                <img class="project-overview__image" src="./img/Finn2.png" alt="GLS Finn">
+                <img class="project-overview__image" src="./img/Sofie.png" alt="Sofie fra Peak Digital">
+                <img class="project-overview__image" src="./img/SC.png" alt="Security Check Logo">
             </div>
             <div id="project-details"></div>
         </section>
@@ -77,10 +78,10 @@
         <section id="contact">
             <h2>Kontakt mig</h2>
             <ul>
-                <li><a href="mailto:"><img class="contact__icon" src="./img/mail.png" alt="">E-mail</a></li>
-                <li><a href="https://github.com/"><img class="contact__icon" src="./img/github.png" alt="">GitHub</a></li>
-                <li><a href="https://www.instagram.com/"><img class="contact__icon" src="./img/insta.png" alt="">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/"><img class="contact__icon" src="./img/linkin.png" alt="">LinkedIn</a></li>
+                <li><a href="mailto:eskildjuul@gmail.com"><img class="contact__icon" src="./img/mail.png" alt="">eskildjuul@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/eskildjuul" target="_blank" rel="noopener noreferrer"><img class="contact__icon" src="./img/insta.png" alt="">@eskildjuul</a></li>
+                <li><a href="https://www.linkedin.com/in/eskildjuulchristensen" target="_blank" rel="noopener noreferrer"><img class="contact__icon" src="./img/linkin.png" alt="">@eskildjuulchristensen</a></li>
+                <li><a href="https://github.com/eskildjuul" target="_blank" rel="noopener noreferrer"><img class="contact__icon" src="./img/github.png" alt="">github.com/eskildjuul</a></li>
             </ul>
         </section>
     </main>
