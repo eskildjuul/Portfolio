@@ -26,6 +26,28 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #687C70;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 16px;
+  left: 16px;
+  transform: translateY(-200%);
+  padding: 12px 16px;
+  background-color: #687C70;
+  color: #F5F1E9;
+  font-weight: 700;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 h1,
 h2,
 p {
